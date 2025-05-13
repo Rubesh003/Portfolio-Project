@@ -1,0 +1,220 @@
+datatype and arguments with and without of 4 types
+
+arrow func. asusual of your function
+        var evenodd = () => {
+                if (a%2 == 0) {
+                        console.log("even")
+                }
+                else {
+                        Clg("odd")
+                }
+        }
+        evenodd(value).
+
+Destructuring operator:
+        arr=[10,20 ]
+        const[a,b,c] = arr
+                If we assign the values to a,b,c in the 
+
+Spread operator:
+        ...variable name
+
+SetInterval :
+        SetInterval(function timer)
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+
+callback func:
+        It is a preefined function where we call it inside the necessary function
+
+function formValidation() {
+        setTimeout(() => {
+                console.log("Form validation coalled");
+                formValidationCompleted();
+        }, 2000);
+}
+function formValidationCompleted() {
+        console.log("Form validation completed");
+}
+formValidation("formValidationCompleted");
+
+promise:
+        Do the program will execute the code in the certain time frame or not with the help of resolve,reject.
+        -> If it resolves it will go into then block.
+        ->If it does,t resolves it will go to catch block.
+Syntax:
+     1) prom = new Promise
+     2) return
+let pro = new promise(resolve,reject) => { 
+};
+
+Async/Await :
+    Asynchronous - independent
+    syntax error
+-------------------------------------------------------------------------------------------------------------------
+
+step 1:
+        install package
+        ->npm i -g http
+step 2:
+        after installing u will find the node _modules -> inside node modules u will find http
+step 3:
+        create server
+        ->http.createserver()
+
+React :
+        JSX-> XML html
+                        var a = <h1>hello</h1> => JSX
+                        var a = <div> <h1> </h1> <p> </p> <a> </a> <br> </br> </div>
+                                        section,article,header,footer or <empty> instead of div
+                        "BABEL"
+-------------------------------------------------------------------------------------------------------------------
+=>Install and create React:
+        (1) npm i -g create-react-app
+            create-react-app <appname>
+        (2) npx - node package executable
+                npx create-react-app --version
+        (3) cd .. //to come to folder
+        (4) create-react-app react-project
+        -cd react-project
+        -Dir  
+                .                               //used to navigate b/w
+                ..                              // "    "    "    " repo
+                .gitignore                      //ignores the files and folder in the file
+                node_modules                    //instructions that you need to follow packages all stored
+                package-lock.json               //the file where all your dependencies wil be in a state of locked
+                package.json
+                public                          //the main folder that's server to the end user
+                README.md
+                src                             //all your codes
+-------------------------------------------------------------------------------------------------------------------
+D9 agenda - props,states,routers,state management
+
+ways to create react app:
+        -using
+                create-react-app directry
+                npx create-react-app
+        Folder structure.
+        .git -> holds git's stuffs
+        public -> the main folder that's server to the end user
+        src -> source folder where all ur components and styling come to picture
+        package-lock.jason -> the file where all your dependencies wil be in a state of locked
+        package.jason -> file where all your dependencies stored,a file which is most importan and should not be deleted at any case
+        node_modules -> packages all stored
+
+        --out of these folder structures 2 can be deleted using commands
+          ->package-lock.jason
+          ->node_modules
+        (npm install/npm i) -> commads used to restore
+
+        DOM-Document Object modules
+                R-dom
+                V-dom
+Components:
+        class and functional components
+
+
+const FuncComp = (props) => {
+        return <h1> Hi,{props.name}</h1>
+}
+
+(1) <BrowserRouter>
+        <Routs>
+                <Route path="/" element ={<FuncComp/>}></Route>
+                <Route path="/about" element ={<About/>}
+
+(2)Link
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
+                The page will be routed to respective
+
+React-Router-dom:
+      install=>  npm i react-router-dom
+      <BrowserRouter>,<Routes>,<Route>,<Link>
+
+
+State:
+        syntax:
+                It will take two parameters:
+                        1.variable name.
+                        2.function.
+
+                var[count,setcount] = useState(0)
+
+        const Home = () => {
+
+                var[count,setCount] = useState(0)
+                //var count = 0;
+                setCount = () =>
+                return (
+                        <div>
+                                <h1>Home</h1>
+                                <h2>Count:{count}</h2>
+                                <button onClick={setCount(count+1)}>Add 1</button>
+                        </div>
+                )
+        }
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+Hooks
+class component
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+creating the db:
+use "supermarket"
+
+creating collections:
+db.createCollection("cust");
+
+Inserting customer records
+	insertline:
+		db.cust.insertOne({
+		custId:"123",
+		custName:"skcet"
+})
+insertmany: db.cusr.insertMany({
+	custId:"123",
+	custName:"skcet"
+},
+{
+custId:"545"
+custName:"NGP"
+})
+
+Retrive:
+	db.cust.Find(custName:"NGP")
+	db.cust.FindOne(CustId:"345")
+Update:
+	db.cust.UpdateOne(custId:"123",custName:"SKG")
+	db.cust.UpdateMany(custId:"345",custName:"SKCT")
+Delete:
+	db.cust.deleteOne(custId:"123")
+	db.cust.deleteMany(custName:"SKG")
+B.E
+  ->GHp->Server
+  ->express->Server
+
+	npm ; express
+
+	For backend you need to craete it from scratch:
+
+	1)Create a folder -> Backend
+	2)npm init
+	3)Create a file with the name index.js
+	4)npm i express
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+var express = require("express");
+var mdb = require('mongoose');
+
+
+crate a folder with the name modules
+
+
+	The _idlestart and Symbol(async_id_symbol) if primary key attribute is satisfied
+	230 and 76
+	if not satisfied
+	220 and 102
